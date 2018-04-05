@@ -146,7 +146,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
-   min-height: 53px;
+   min-height: 48px;
    width: auto;
 
    /* center align the menu */
@@ -155,7 +155,7 @@ ul#nav {
 ul#nav li {
    position: relative;
    list-style: none;
-   height: 53px;
+   height: 48px;
    display: inline-block;
 }
 
@@ -180,7 +180,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #FFFFFF; }
-ul#nav li.currentL a { color: #FFFFFF; }
+
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
