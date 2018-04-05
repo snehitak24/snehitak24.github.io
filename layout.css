@@ -146,7 +146,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
-   min-height: 48px;
+   min-height: 53px;
    width: auto;
 
    /* center align the menu */
@@ -155,7 +155,7 @@ ul#nav {
 ul#nav li {
    position: relative;
    list-style: none;
-   height: 48px;
+   height: 53px;
    display: inline-block;
 }
 
@@ -165,7 +165,7 @@ ul#nav li a {
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
    display: inline-block;
-   padding: 8px 13px;
+   padding: 8px 18px;
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
