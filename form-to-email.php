@@ -1,12 +1,12 @@
 <?php
 if(!isset($_POST['submit']))
 {
-	//This page should not be accessed directly. Need to submit the form.
 	echo "error; you need to submit the form!";
 }
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['contactName'];
+$visitor_email = $_POST['contactEmail'];
+$message = $_POST['contactMessage'];
+$subject = $_POST['contactSubject'];
 
 //Validate first
 if(empty($name)||empty($visitor_email)) 
@@ -21,18 +21,15 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'tom@amazing-designs.com';//<== update the email address
-$email_subject = "New Form submission";
+$email_from = $name;
+$email_subject = $subject;
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
     
-$to = "tom@amazing-designs.com";//<== update the email address
+$to = "snehita.k24@gmail.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
 mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-header('Location: thank-you.html');
 
 
 // Function to validate against any email injection attempts
