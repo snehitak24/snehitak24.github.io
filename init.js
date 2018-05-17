@@ -152,7 +152,7 @@
       $.ajax({
 
 	      type: "POST",
-	      url: "form-to-email.php",
+	      url: "sendEmail.php",
 	      data: data,
 	      success: function(msg) {
 
