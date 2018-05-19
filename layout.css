@@ -67,11 +67,11 @@ header .banner-text h1 {
 
 header .banner-text h2 {
    color: #fff;
-   letter-spacing: -2px;
+   letter-spacing: 1px;
 }
 
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
+   font: 22px/1.9em 'librebaskerville-regular', serif;
    color: #FFFFFF;
    margin: 0 auto;
    width: 70%;
